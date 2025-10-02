@@ -1,0 +1,34 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="kidsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF5252;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Kids T-Shirt -->
+  <rect x="160" y="80" width="80" height="90" rx="10" fill="url(#kidsGradient)" stroke="#FF5252" stroke-width="2"/>
+  
+  <!-- Smaller Sleeves -->
+  <rect x="140" y="90" width="20" height="60" rx="10" fill="url(#kidsGradient)" stroke="#FF5252" stroke-width="2"/>
+  <rect x="240" y="90" width="20" height="60" rx="10" fill="url(#kidsGradient)" stroke="#FF5252" stroke-width="2"/>
+  
+  <!-- Cute Design Elements -->
+  <circle cx="200" cy="110" r="15" fill="#FFF" opacity="0.8"/>
+  <circle cx="190" cy="105" r="3" fill="#FF5252"/>
+  <circle cx="210" cy="105" r="3" fill="#FF5252"/>
+  <path d="M190 115 Q200 120 210 115" fill="none" stroke="#FF5252" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Fun Details -->
+  <circle cx="180" cy="130" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="220" cy="130" r="4" fill="#FFF" opacity="0.6"/>
+  
+  <!-- Star Decoration -->
+  <polygon points="320,50 325,60 335,60 327,67 330,77 320,70 310,77 313,67 305,60 315,60" fill="#FFD700" opacity="0.7"/>
+  
+  <!-- Text -->
+  <text x="200" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#FF5252" font-weight="bold">Kids Wear</text>
+</svg>

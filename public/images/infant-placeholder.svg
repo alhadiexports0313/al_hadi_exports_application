@@ -1,0 +1,41 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="infantGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA0B4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Baby Onesie -->
+  <rect x="160" y="90" width="80" height="80" rx="15" fill="url(#infantGradient)" stroke="#FFA0B4" stroke-width="2"/>
+  
+  <!-- Tiny Sleeves -->
+  <rect x="140" y="100" width="20" height="40" rx="10" fill="url(#infantGradient)" stroke="#FFA0B4" stroke-width="2"/>
+  <rect x="240" y="100" width="20" height="40" rx="10" fill="url(#infantGradient)" stroke="#FFA0B4" stroke-width="2"/>
+  
+  <!-- Snap Buttons -->
+  <circle cx="190" cy="110" r="2" fill="#FFF"/>
+  <circle cx="200" cy="110" r="2" fill="#FFF"/>
+  <circle cx="210" cy="110" r="2" fill="#FFF"/>
+  
+  <!-- Cute Details -->
+  <circle cx="200" cy="130" r="8" fill="#FFF" opacity="0.8"/>
+  <circle cx="195" cy="127" r="2" fill="#FFA0B4"/>
+  <circle cx="205" cy="127" r="2" fill="#FFA0B4"/>
+  <path d="M195 133 Q200 136 205 133" fill="none" stroke="#FFA0B4" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Baby Booties -->
+  <ellipse cx="170" cy="190" rx="8" ry="6" fill="url(#infantGradient)" stroke="#FFA0B4" stroke-width="1"/>
+  <ellipse cx="230" cy="190" rx="8" ry="6" fill="url(#infantGradient)" stroke="#FFA0B4" stroke-width="1"/>
+  
+  <!-- Pacifier Icon -->
+  <circle cx="320" cy="60" r="12" fill="#FFF" stroke="#FFA0B4" stroke-width="2"/>
+  <circle cx="320" cy="60" r="6" fill="#FFA0B4"/>
+  <rect x="320" y="70" width="2" height="8" fill="#FFA0B4"/>
+  
+  <!-- Text -->
+  <text x="200" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#FFA0B4" font-weight="bold">Infant Wear</text>
+</svg>

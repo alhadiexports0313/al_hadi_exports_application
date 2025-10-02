@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
+  // swcMinify: true, // Removed as it's deprecated in newer Next.js versions
   experimental: {
     optimizeCss: true,
   },
