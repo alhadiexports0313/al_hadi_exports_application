@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import { Header, Footer } from "@/components/ui";
 import PerformanceTracker from '@/components/PerformanceTracker';
 
 const inter = Inter({
@@ -40,7 +39,6 @@ export const metadata: Metadata = {
     title: "AL HADI EXPORTS - Premium Garments Manufacturer",
     description: "Leading garments manufacturer and exporter based in Karachi, Pakistan",
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   alternates: {
     canonical: "https://alhadiexports.com",
@@ -48,6 +46,11 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -101,7 +104,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content" className="min-h-screen">{children}</main>
         <Footer />
-        <PerformanceTracker />
+        {/* PerformanceTracker temporarily removed */}
       </body>
     </html>
   );

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import productsData from '@/data/products.json';
+// @ts-ignore
+import productsData from '../../../data/products.json';
 
 export default function ProductsPage() {
   return (
@@ -24,7 +25,7 @@ export default function ProductsPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
-            {productsData.categories.map((category) => (
+            {productsData.categories.map((category: any) => (
               <div key={category.id}>
                 <div className="text-center mb-8">
                   <h2 className="text-3xl font-bold text-gray-900 mb-2">{category.name}</h2>
@@ -32,7 +33,7 @@ export default function ProductsPage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {category.products.map((product) => (
+                  {category.products.map((product: any) => (
                     <Card key={product.id} className="hover:shadow-lg transition-shadow">
                       <CardHeader>
                         <h3 className="text-xl font-semibold text-gray-900">{product.name}</h3>
@@ -43,7 +44,7 @@ export default function ProductsPage() {
                         <div className="mb-4">
                           <h4 className="font-semibold text-gray-900 mb-2">Materials:</h4>
                           <div className="flex flex-wrap gap-2">
-                            {product.materials.map((material, index) => (
+                            {product.materials.map((material: string, index: number) => (
                               <span key={index} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">
                                 {material}
                               </span>
@@ -54,7 +55,7 @@ export default function ProductsPage() {
                         <div className="mb-4">
                           <h4 className="font-semibold text-gray-900 mb-2">Sizes:</h4>
                           <div className="flex flex-wrap gap-2">
-                            {product.sizes.map((size, index) => (
+                            {product.sizes.map((size:string, index:number) => (
                               <span key={index} className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm">
                                 {size}
                               </span>
@@ -65,7 +66,7 @@ export default function ProductsPage() {
                         <div className="mb-6">
                           <h4 className="font-semibold text-gray-900 mb-2">Features:</h4>
                           <ul className="text-sm text-gray-600 space-y-1">
-                            {product.features.map((feature, index) => (
+                            {product.features.map((feature:string, index:number) => (
                               <li key={index} className="flex items-center">
                                 <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
                                 {feature}
@@ -96,13 +97,13 @@ export default function ProductsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productsData.fabrics.map((fabric, index) => (
+            {productsData.fabrics.map((fabric: any, index:number) => (
               <Card key={index} className="text-center">
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">{fabric.name}</h3>
                   <p className="text-gray-600 mb-4">{fabric.description}</p>
                   <div className="space-y-2">
-                    {fabric.properties.map((property, propIndex) => (
+                    {fabric.properties.map((property:string, propIndex:number) => (
                       <div key={propIndex} className="bg-gray-100 text-gray-800 px-3 py-1 rounded text-sm">
                         {property}
                       </div>
@@ -124,7 +125,7 @@ export default function ProductsPage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {productsData.quality_standards.map((standard, index) => (
+            {productsData.quality_standards.map((standard:string, index:number) => (
               <Card key={index} className="text-center">
                 <CardContent className="pt-6">
                   <div className="bg-green-100 rounded-full p-4 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
