@@ -1,20 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Custom AL HADI EXPORTS Brand Styles */
+:root {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary-950: #172554;
+
+  --color-accent-50: #f0fdf4;
+  --color-accent-100: #dcfce7;
+  --color-accent-200: #bbf7d0;
+  --color-accent-300: #86efac;
+  --color-accent-400: #4ade80;
+  --color-accent-500: #22c55e;
+  --color-accent-600: #16a34a;
+  --color-accent-700: #15803d;
+  --color-accent-800: #166534;
+  --color-accent-900: #14532d;
+  --color-accent-950: #052e16;
+
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0f172a;
+  --color-neutral-950: #020617;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  color: #111827;
+  color: var(--color-neutral-800);
   background: #ffffff;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 }
 
-/* Custom Components */
+/* Custom Components using standard CSS */
 .btn-primary {
-  background-color: #2563eb;
+  background-color: var(--color-primary-600);
   color: white;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -24,13 +65,14 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
+  background-color: var(--color-primary-700);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background-color: #f3f4f6;
-  color: #1f2937;
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-700);
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
@@ -38,27 +80,61 @@ body {
 }
 
 .btn-secondary:hover {
-  background-color: #e5e7eb;
+  background-color: var(--color-neutral-200);
+}
+
+.btn-accent {
+  background-color: var(--color-accent-500);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent-600);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
 }
 
 .card {
   background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
   padding: 1.5rem;
   transition: all 0.3s;
 }
 
 .card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
+
+.card-primary {
+  border: 2px solid var(--color-primary-100);
+}
+
+.card-primary:hover {
+  border-color: var(--color-primary-200);
+}
+
+.card-accent {
+  border: 2px solid var(--color-accent-100);
+}
+
+.card-accent:hover {
+  border-color: var(--color-accent-200);
 }
 
 .section-title {
   font-size: 1.875rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--color-neutral-900);
   margin-bottom: 2rem;
   text-align: center;
+  font-family: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
 @media (min-width: 768px) {
@@ -67,14 +143,21 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
 .section-subtitle {
-  font-size: 1.25rem;
-  color: #4b5563;
+  font-size: 1.125rem;
+  color: var(--color-neutral-600);
   margin-bottom: 3rem;
   text-align: center;
   max-width: 48rem;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 300;
 }
 
 .text-balance {
@@ -100,5 +183,147 @@ body {
   .container-custom {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* Textile industry inspired utility classes */
+.fabric-texture {
+  background: linear-gradient(to bottom right, var(--color-neutral-50), var(--color-neutral-100));
+}
+
+.fabric-shadow {
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15), 0 2px 15px -3px rgba(0, 0, 0, 0.07);
+}
+
+/* Premium typography */
+.font-display {
+  font-family: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+/* Responsive typography */
+.text-responsive-lg {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .text-responsive-lg {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-responsive-lg {
+    font-size: 1.5rem;
+  }
+}
+
+.text-responsive-xl {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .text-responsive-xl {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-responsive-xl {
+    font-size: 1.875rem;
+  }
+}
+
+.text-responsive-2xl {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .text-responsive-2xl {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-responsive-2xl {
+    font-size: 2.25rem;
+  }
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: var(--color-neutral-100);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--color-neutral-300);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-neutral-400);
+}
+
+/* Focus styles */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--color-primary-500);
+}
+
+/* Loading states */
+.loading-shimmer {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background: linear-gradient(to right, var(--color-neutral-200), var(--color-neutral-100), var(--color-neutral-200));
+  background-size: 200% 100%;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-break {
+    page-break-before: always;
   }
 }
