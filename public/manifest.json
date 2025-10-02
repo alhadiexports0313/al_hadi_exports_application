@@ -1,0 +1,23 @@
+{
+  "name": "AL HADI EXPORTS",
+  "short_name": "AL HADI",
+  "description": "Premium Garment Manufacturing & Export from Pakistan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e3a8a",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "manufacturing"],
+  "lang": "en"
+}

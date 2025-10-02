@@ -1,0 +1,102 @@
+{
+    "company_name": "AL HADI EXPORTS",
+    "headquarters": "Karachi, Pakistan",
+    "description": "A leading manufacturer and exporter of high-quality garments specializing in knit fashion and retail garments.",
+    "vision_mission": {
+        "vision": "To be recognized as a trusted partner in the textile industry, delivering premium products with innovation and integrity.",
+        "mission": "Expand global footprint by developing strong relationships with reputed buyers and customers worldwide."
+    },
+    "major_customers": {
+        "USA": [
+            "Cotton & Else",
+            "Basix of America",
+            "Buda-Bean",
+            "U.S Apparel",
+            "Decibal",
+            "BMGM",
+            "Cuffy’s",
+            "TopImage",
+            "Family Dollar",
+            "Bonghwa",
+            "Exist Inc.",
+            "Happy Kids",
+            "Walmart (USA & Brazil)"
+        ],
+        "Europe": [
+            "Newlook",
+            "Stedyvarious",
+            "Newyorker",
+            "Auchan",
+            "Primemark",
+            "KIK",
+            "Woolworth",
+            "TEDI",
+            "Instyle",
+            "LPP"
+        ],
+        "Saudi Arabia": [
+            "Prime Polo"
+        ]
+    },
+    "product_range": [
+        "Fleece Hooded Jackets",
+        "Fleece Sweatshirts",
+        "Nightwear’s",
+        "Jog Suits",
+        "Knitted Round Neck",
+        "Knitted Pigment Dyed Tees",
+        "Polos",
+        "Kids Tank Tops",
+        "Kids Suits",
+        "Toddler & Infant T-Shirts",
+        "Toddler & Infant Cardigans",
+        "Boxer Shorts & Underwear",
+        "And much more…"
+    ],
+    "product_catalogue": "Al Hadi Exports Catalog",
+    "certifications": [
+        "SEDEX",
+        "BSCI",
+        "HIGG",
+        "Accord Pakistan Inspection"
+    ],
+    "strengths": [
+        "Strong global network",
+        "Capability to execute complex orders",
+        "In-house expertise in sampling & pattern making",
+        "Competitive pricing with strict controls",
+        "Wide variety of prints and washes",
+        "Specialized dyeing and finishing options"
+    ],
+    "stitching_facility": {
+        "Flat Lock": 85,
+        "Single Needle": 129,
+        "Over Lock": 155,
+        "Two Needle": 4,
+        "Feedo": 3,
+        "Bar Tack": 4,
+        "Button Hole": 3,
+        "Button Attachment": 2,
+        "Eyelet": 3,
+        "Consie": 3,
+        "Press": 12,
+        "Boiler": 3,
+        "Cutting Machines": 3
+    },
+    "embroidery_dyeing_facility": {
+        "embroidery": "SWF 20-head machines",
+        "dyeing_unit": [
+            "High-capacity Jet",
+            "Soft Flow",
+            "Winch",
+            "Dryer",
+            "Feraro Compactor",
+            "Sofset",
+            "Heat Set",
+            "Raising",
+            "Tumbler",
+            "Stenter+Sliter"
+        ]
+    },
+    "conclusion": "At Al HADI Exports, we believe in partnerships built on trust and reliability. Satisfied clients are our top priority, and we continually strive to exceed expectations in quality, service, and innovation."
+}
