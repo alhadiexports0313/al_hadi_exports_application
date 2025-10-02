@@ -23,6 +23,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: "AL HADI EXPORTS - Premium Garments Manufacturer & Exporter",
   description: "Leading garments manufacturer and exporter based in Karachi, Pakistan. Specializing in high-quality knit fashion and retail garments for global markets.",
   keywords: "garments manufacturer, textile exporter, knit fashion, Pakistan garments, clothing manufacturer",
@@ -102,7 +103,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         <Header />
-        <main id="main-content" className="min-h-screen">{children}</main>
+        <main id="main-content" className="min-h-screen pt-[120px] lg:pt-[140px]">{children}</main>
         <Footer />
         {/* PerformanceTracker temporarily removed */}
       </body>

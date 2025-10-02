@@ -358,3 +358,44 @@ body {
     page-break-before: always;
   }
 }
+
+/* Header positioning utilities */
+.header-offset {
+  padding-top: 120px;
+}
+
+@media (min-width: 1024px) {
+  .header-offset {
+    padding-top: 140px;
+  }
+}
+
+/* Z-index utilities for proper layering */
+.z-header {
+  z-index: 50;
+}
+
+.z-modal {
+  z-index: 60;
+}
+
+.z-overlay {
+  z-index: 40;
+}
+
+/* Mobile menu positioning */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.mobile-menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

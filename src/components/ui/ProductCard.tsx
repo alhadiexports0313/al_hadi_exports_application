@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Button } from './Button';
-import { Download, FileText, Heart, MessageCircle } from 'lucide-react';
+import { Download, FileText, Heart, MessageCircle, Eye } from 'lucide-react';
+import ProductQuickView from './ProductQuickView';
 
 interface Product {
   id: string;
@@ -31,6 +32,7 @@ interface ProductCardProps {
 export default function ProductCard({ product, onSelect, isSelected, onDownloadPDF, onInquire }: ProductCardProps) {
   const [isLiked, setIsLiked] = useState(false);
   const [imageError, setImageError] = useState(false);
+  const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
 
   const getProductImage = (product: Product) => {
     if (product.image) return product.image;
@@ -50,7 +52,7 @@ export default function ProductCard({ product, onSelect, isSelected, onDownloadP
     if (name.includes('infant') || name.includes('baby') || category.includes('infant')) return '/images/infant-placeholder.svg';
     if (name.includes('underwear') || name.includes('boxer') || name.includes('brief') || category.includes('underwear')) return '/images/underwear-placeholder.svg';
     
-    return '/images/default-product.jpg';
+    return '/images/default-product.svg';
   };
 
   const handleImageError = () => {
@@ -65,6 +67,11 @@ export default function ProductCard({ product, onSelect, isSelected, onDownloadP
   const handleInquire = (e: React.MouseEvent) => {
     e.stopPropagation();
     onInquire?.(product);
+  };
+
+  const handleQuickView = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsQuickViewOpen(true);
   };
 
   return (
@@ -201,11 +208,18 @@ export default function ProductCard({ product, onSelect, isSelected, onDownloadP
           <Button
             variant="outline"
             size="sm"
-            className="flex-1"
             onClick={handleDownloadPDF}
           >
             <FileText className="h-4 w-4 mr-1" />
             Spec PDF
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={handleQuickView}
+          >
+            <Eye className="h-4 w-4 mr-1" />
+            Quick View
           </Button>
           {onInquire && (
             <Button size="sm" className="flex-1" onClick={handleInquire}>
@@ -215,6 +229,19 @@ export default function ProductCard({ product, onSelect, isSelected, onDownloadP
           )}
         </div>
       </div>
+
+      {/* Quick View Modal */}
+      <ProductQuickView
+        product={{
+          ...product,
+          categoryId: (product as any).categoryId ?? '',
+          slug: (product as any).slug ?? product.name.toLowerCase().replace(/\s+/g, '-'),
+        }}
+        isOpen={isQuickViewOpen}
+        onClose={() => setIsQuickViewOpen(false)}
+        onInquire={onInquire}
+        onDownloadPDF={onDownloadPDF}
+      />
     </div>
   );
 }

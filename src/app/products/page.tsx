@@ -68,7 +68,7 @@ function getProductImage(name: string): string {
       return image;
     }
   }
-  return '/images/default-product.jpg';
+  return '/images/default-product.svg';
 }
 
 function generatePrice(name: string, materials: string[]): number {

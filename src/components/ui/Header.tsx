@@ -85,13 +85,10 @@ const Header = () => {
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.classList.add('mobile-menu-open');
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.classList.remove('mobile-menu-open');
     }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
   }, [isMenuOpen]);
 
   const handleSearch = (e: React.FormEvent) => {
@@ -124,7 +121,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <header className={`fixed top-0 left-0 right-0 z-header transition-all duration-300 ${
       isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-white'
     }`}>
       {/* Top Bar */}
@@ -217,7 +214,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-white z-50 overflow-y-auto" ref={menuRef}>
+        <div className="lg:hidden mobile-menu overflow-y-auto" ref={menuRef}>
           <div className="container-custom py-6">
             <div className="flex items-center justify-between mb-8">
               <Link href="/" className="flex items-center space-x-3 focus-ring rounded-lg" onClick={() => setIsMenuOpen(false)}>
@@ -276,7 +273,7 @@ const Header = () => {
 
       {/* Search Modal */}
       {isSearchOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setIsSearchOpen(false)}>
+        <div className="fixed inset-0 bg-black/50 z-modal flex items-center justify-center p-4" onClick={() => setIsSearchOpen(false)}>
           <div className="bg-white rounded-lg shadow-xl max-w-2xl w-full" ref={searchRef} onClick={(e) => e.stopPropagation()}>
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">

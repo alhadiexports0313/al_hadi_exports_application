@@ -3,7 +3,6 @@ import { MapPin, Phone, Mail, Download } from 'lucide-react';
 
 export default function ContactPage() {
   const profile = getProfileData();
-  const { company } = profile;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -46,7 +45,7 @@ export default function ContactPage() {
                   <Phone className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Phone</h3>
-                <p className="text-gray-600 mb-2">{company.contact.phone}</p>
+              <p className="text-gray-600 mb-2">+92-21-1234567</p>
                 <p className="text-sm text-gray-500">Business Hours: 9:00 AM - 6:00 PM</p>
               </div>
 
@@ -55,7 +54,7 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-gray-600 mb-2">{company.contact.email}</p>
+              <p className="text-gray-600 mb-2">info@alhadiexports.pk</p>
                 <p className="text-sm text-gray-500">Response within 24 hours</p>
               </div>
 
@@ -64,7 +63,7 @@ export default function ContactPage() {
                   <MapPin className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Address</h3>
-                <p className="text-gray-600 mb-2">{company.address}</p>
+              <p className="text-gray-600 mb-2">{profile.headquarters}</p>
                 <p className="text-sm text-gray-500">Lahore, Pakistan</p>
               </div>
             </div>
