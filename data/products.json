@@ -1,0 +1,176 @@
+{
+  "categories": [
+    {
+      "id": "fleece",
+      "name": "Fleece Products",
+      "description": "High-quality fleece garments for comfort and warmth",
+      "products": [
+        {
+          "id": "fleece-hooded-jackets",
+          "name": "Fleece Hooded Jackets",
+          "description": "Premium fleece hooded jackets with various styles and colors",
+          "materials": ["Cotton Fleece", "Polyester Fleece", "Cotton-Poly Blend"],
+          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+          "features": ["Soft Touch", "Durable", "Color Fast", "Shrink Resistant"]
+        },
+        {
+          "id": "fleece-sweatshirts",
+          "name": "Fleece Sweatshirts",
+          "description": "Comfortable fleece sweatshirts for casual wear",
+          "materials": ["Cotton Fleece", "Polyester Fleece"],
+          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+          "features": ["Breathable", "Comfortable Fit", "Long Lasting"]
+        }
+      ]
+    },
+    {
+      "id": "nightwear",
+      "name": "Nightwear",
+      "description": "Comfortable nightwear for peaceful sleep",
+      "products": [
+        {
+          "id": "nightwears",
+          "name": "Nightwear Sets",
+          "description": "Soft and comfortable nightwear sets",
+          "materials": ["Cotton", "Modal", "Bamboo Fiber"],
+          "sizes": ["S", "M", "L", "XL"],
+          "features": ["Soft Fabric", "Comfortable Fit", "Breathable"]
+        }
+      ]
+    },
+    {
+      "id": "activewear",
+      "name": "Activewear & Jog Suits",
+      "description": "Performance wear for active lifestyle",
+      "products": [
+        {
+          "id": "jog-suits",
+          "name": "Jog Suits",
+          "description": "Stylish and comfortable jog suits for workouts and casual wear",
+          "materials": ["Cotton Jersey", "Polyester Blend", "Moisture-wicking Fabric"],
+          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+          "features": ["Moisture Wicking", "4-way Stretch", "Quick Dry"]
+        }
+      ]
+    },
+    {
+      "id": "knitwear",
+      "name": "Knitwear",
+      "description": "Premium knitted garments",
+      "products": [
+        {
+          "id": "knitted-round-neck",
+          "name": "Knitted Round Neck Tees",
+          "description": "Classic round neck t-shirts in various knits",
+          "materials": ["Single Jersey", "Interlock", "Pique"],
+          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+          "features": ["Soft Hand Feel", "Color Retention", "Shape Retention"]
+        },
+        {
+          "id": "knitted-pigment-dyed-tees",
+          "name": "Knitted Pigment Dyed Tees",
+          "description": "Fashionable pigment dyed t-shirts with vintage look",
+          "materials": ["Cotton Jersey", "Ring Spun Cotton"],
+          "sizes": ["S", "M", "L", "XL", "XXL"],
+          "features": ["Vintage Wash", "Soft Feel", "Unique Color Variations"]
+        },
+        {
+          "id": "polos",
+          "name": "Polos",
+          "description": "Classic polo shirts for casual and semi-formal wear",
+          "materials": ["Pique", "Jersey", "Interlock"],
+          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+          "features": ["Collar Retention", "Button Placket", "Comfortable Fit"]
+        }
+      ]
+    },
+    {
+      "id": "kids-wear",
+      "name": "Kids Wear",
+      "description": "Comfortable and safe clothing for children",
+      "products": [
+        {
+          "id": "kids-tank-tops",
+          "name": "Kids Tank Tops",
+          "description": "Cool and comfortable tank tops for kids",
+          "materials": ["Cotton Jersey", "Cotton Blend"],
+          "sizes": ["2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "10Y", "12Y", "14Y"],
+          "features": ["Soft Fabric", "Safe Dyes", "Comfortable Fit"]
+        },
+        {
+          "id": "kids-suits",
+          "name": "Kids Suits",
+          "description": "Adorable suits for kids special occasions",
+          "materials": ["Cotton", "Polyester Blend"],
+          "sizes": ["2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "10Y", "12Y", "14Y"],
+          "features": ["Comfortable", "Durable", "Easy Care"]
+        },
+        {
+          "id": "toddler-infant-tshirts",
+          "name": "Toddler & Infant T-Shirts",
+          "description": "Soft and safe t-shirts for toddlers and infants",
+          "materials": ["100% Cotton", "Organic Cotton"],
+          "sizes": ["0-3M", "3-6M", "6-9M", "9-12M", "12-18M", "18-24M"],
+          "features": ["Hypoallergenic", "Soft Touch", "Easy On/Off"]
+        },
+        {
+          "id": "toddler-infant-cardigans",
+          "name": "Toddler & Infant Cardigans",
+          "description": "Cozy cardigans for little ones",
+          "materials": ["Cotton", "Cotton Blend", "Soft Acrylic"],
+          "sizes": ["0-3M", "3-6M", "6-9M", "9-12M", "12-18M", "18-24M"],
+          "features": ["Soft", "Warm", "Easy Button Closure"]
+        }
+      ]
+    },
+    {
+      "id": "innerwear",
+      "name": "Innerwear",
+      "description": "Comfortable innerwear for everyday use",
+      "products": [
+        {
+          "id": "boxer-shorts-underwear",
+          "name": "Boxer Shorts & Underwear",
+          "description": "Comfortable and breathable innerwear",
+          "materials": ["Cotton", "Modal", "Bamboo Fiber"],
+          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+          "features": ["Breathable", "Comfortable Waistband", "Tagless"]
+        }
+      ]
+    }
+  ],
+  "fabrics": [
+    {
+      "name": "Cotton Jersey",
+      "description": "Soft, breathable cotton jersey fabric",
+      "properties": ["Breathable", "Soft Touch", "Natural Fiber"]
+    },
+    {
+      "name": "Polyester Blend",
+      "description": "Durable polyester blend fabrics",
+      "properties": ["Durable", "Quick Dry", "Wrinkle Resistant"]
+    },
+    {
+      "name": "Interlock",
+      "description": "Double-knit interlock fabric",
+      "properties": ["Stable", "Smooth Surface", "Good Recovery"]
+    },
+    {
+      "name": "Pique",
+      "description": "Textured pique knit fabric",
+      "properties": ["Textured", "Breathable", "Polo Shirt Standard"]
+    },
+    {
+      "name": "Fleece",
+      "description": "Warm and cozy fleece fabric",
+      "properties": ["Warm", "Soft", "Insulating"]
+    }
+  ],
+  "quality_standards": [
+    "ISO 9001 Quality Management",
+    "OEKO-TEX Standard 100",
+    "GOTS Organic Standards",
+    "WRAP Certification",
+    "Sedex Membership"
+  ]
+}
